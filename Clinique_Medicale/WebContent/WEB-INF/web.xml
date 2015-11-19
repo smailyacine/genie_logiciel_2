@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+ 
+  <listener>
+<listener-class>com.app.config.InitialisationDaoFactory</listener-class>
+</listener>
+
+  <servlet>
+    <servlet-name>CreationPatient</servlet-name>
+    <servlet-class>com.app.servlets.CreationPatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreationPatient</servlet-name>
+    <url-pattern>/creationPatient</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ConnexionDocteur</servlet-name>
+    <servlet-class>com.app.servlets.ConnexionDocteur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConnexionDocteur</servlet-name>
+    <url-pattern>/connexionDocteur</url-pattern>
+  </servlet-mapping>  
+  <servlet>
+    <servlet-name>ListePatients</servlet-name>
+    <servlet-class>com.app.servlets.ListePatients</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListePatients</servlet-name>
+    <url-pattern>/listePatients</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreationDocteur</servlet-name>
+    <servlet-class>com.app.servlets.CreationDocteur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreationDocteur</servlet-name>
+    <url-pattern>/creationDocteur</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListeDocteurs</servlet-name>
+    <servlet-class>com.app.servlets.ListeDocteurs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListeDocteurs</servlet-name>
+    <url-pattern>/listeDocteurs</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeconnexionDocteur</servlet-name>
+    <servlet-class>com.app.servlets.DeconnexionDocteur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeconnexionDocteur</servlet-name>
+    <url-pattern>/DeconnexionDocteur</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>ConnexionPatient</servlet-name>
+    <servlet-class>com.app.servlets.ConnexionPatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConnexionPatient</servlet-name>
+    <url-pattern>/connexionPatient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeconnexionPatient</servlet-name>
+    <servlet-class>com.app.servlets.DeconnexionPatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeconnexionPatient</servlet-name>
+    <url-pattern>/DeconnexionPatient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Index</servlet-name>
+    <servlet-class>com.app.servlets.Index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DossierPatient</servlet-name>
+    <servlet-class>com.app.servlets.DossierPatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DossierPatient</servlet-name>
+    <url-pattern>/dossierpatient</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>ConsultationPatient</servlet-name>
+    <servlet-class>com.app.servlets.ConsultationPatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConsultationPatient</servlet-name>
+    <url-pattern>/consultationpatient</url-pattern>
+  </servlet-mapping>
+  
+  
+
+
+</web-app>
